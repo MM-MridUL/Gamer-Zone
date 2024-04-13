@@ -200,7 +200,8 @@ img{
 @media screen and (max-width:576px){
 
     .navbar-item,
-    .navbar ul{
+    .navbar ul,
+    .gamer-container{
         flex-direction: column;
     }
     .navbar ul{
@@ -213,6 +214,15 @@ img{
     .banner .button .btn{
         margin-right: 1rem;
     }
+    .gamer-container{
+        width: 94%;
+    }
+    .container{
+        padding: 0;
+    }
+    .gamer-container-content {
+        text-align: center;
+    }
     
 }
 
@@ -220,12 +230,16 @@ img{
 @media screen and (min-width:576px) and (max-width:992px){
 
     .navbar-item,
-    .navbar ul{
+    .navbar ul,
+    .gamer-container{
         flex-direction: column;
     }
     .banner .banner-container{
         width:80%;
         flex-direction: column-reverse;
+    }
+    .gamer-container-content {
+        text-align: center;
     }
 
 
