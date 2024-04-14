@@ -155,6 +155,7 @@ img{
 .container{
     background-color: rgba(255, 66, 165, 0.03);
     padding: 60px 0;
+    margin-bottom: 100px;
 }
 .gamer-container{
     width:80%;
@@ -195,13 +196,92 @@ img{
     font-size: 2rem;
     font-weight: 700;
 }
+
+/*Funny section styles */
+
+.funny-section{
+    margin-bottom: 100px;
+}
+
+.funny-title{
+    
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.funny-title span{
+    color: rgba(249, 72, 147, 1);
+}
+.funny-description{
+    color: #534C64;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.funny-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.funny-item{
+    width: 24%;
+}
+.funny-item p{
+    color: #534C64;
+    font-weight: 500;
+    margin-top: 20px;
+    
+}
+.funny-img{
+    position: relative;
+    overflow: hidden;
+
+}
+.image-clicker{
+    background-color:rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    transition: 1s;
+   
+
+}
+.funny-img:hover .image-clicker{
+    top:0;
+}
+.image-clicker div{
+    margin: 0 auto;
+
+}
+.image-clicker div h3{
+   
+    color:#FF42A5;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.image-clicker div a{
+    color: #FFFFFF;
+   
+}
+
+
 /* Responsive */
 /* Mobile devices */
 @media screen and (max-width:576px){
 
     .navbar-item,
     .navbar ul,
-    .gamer-container{
+    .gamer-container,
+    .funny-container{
         flex-direction: column;
     }
     .navbar ul{
@@ -223,6 +303,18 @@ img{
     .gamer-container-content {
         text-align: center;
     }
+    .funny-item{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .funny-item img{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .funny-item p{
+        margin: 0;
+        text-align: center;
+    }
     
 }
 
@@ -240,6 +332,13 @@ img{
     }
     .gamer-container-content {
         text-align: center;
+    }
+    .funny-container{
+        flex-wrap: wrap;
+    }
+    .funny-item{
+        width: 49%;
+        margin-bottom: 20px;
     }
 
 
