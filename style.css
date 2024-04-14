@@ -317,6 +317,129 @@ img{
     max-width: 40%;
 }
 
+/* Career section styles */
+.career-container{
+    background-color: #FF42A5;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    padding: 10px 30px;
+    gap: 20px;
+    color: #FFFFFF;
+    margin-bottom: 100px;
+}
+ul li{
+    list-style: none;
+    line-height: 2.25rem;
+}
+.career-container >div{
+    flex: 1;
+}
+.position{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.career-btn{
+    color: #FF42A5;
+    background-color: #FFFFFF;
+    margin-top: 2rem;
+}
+
+/* Games styles */
+.games-container{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    margin-bottom: 100px;
+}
+.games-btn{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #0B0223;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.games-btn:hover{
+    border: 1px solid #FF42A5;
+    color: #FF42A5;
+}
+
+/* Footer styles */
+
+.footer-section{
+    background-color: #0B0223;
+    padding: 4rem 0;
+}
+.icons{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.footer-section h2{
+    color: #FFFFFF;
+}
+
+.footer-about{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.footer-about li{
+    list-style: none;
+}
+.footer-about li a{
+    color: #FFFFFF;
+    margin-left: 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.footer-icon li{
+    list-style: none;
+}
+.footer-icon li a{
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+.footer-policy{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.footer-policy li{
+    list-style: none;
+}
+.footer-policy li a{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 2rem;
+    text-decoration: none;
+}
+.footer-section h4{
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 2rem;
+    
+
+
+}
+
 
 /* Responsive */
 /* Mobile devices */
@@ -326,8 +449,12 @@ img{
     .navbar ul,
     .gamer-container,
     .funny-container,
-    .play-container{
+    .play-container,
+    .career-container{
         flex-direction: column;
+    }
+    .games-container{
+        grid-template-columns: repeat(3,1fr);
     }
     .navbar ul{
         gap: 1rem;
@@ -387,6 +514,9 @@ img{
     .gamer-container,
     .play-container{
         flex-direction: column;
+    }
+    .games-container{
+        grid-template-columns: repeat(4,1fr);
     }
     .banner .banner-container{
         width:80%;
