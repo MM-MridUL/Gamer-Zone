@@ -273,6 +273,50 @@ img{
    
 }
 
+/* Play section styles */
+.play-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.play-content{
+    width: 80%;
+   
+}
+.content{
+    max-width: 370px;
+    text-align: right;
+    margin: 0 auto;
+}
+.content h2{
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+
+}
+.content h2 span{
+    color: #F948B2;
+}
+.content p{
+    color: #534C64;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+.play-img{}
+.play-image{
+    position: relative;
+    bottom: 170px;
+    right: 80px;
+}
+.play-image img{
+    max-width: 40%;
+}
+
 
 /* Responsive */
 /* Mobile devices */
@@ -281,7 +325,8 @@ img{
     .navbar-item,
     .navbar ul,
     .gamer-container,
-    .funny-container{
+    .funny-container,
+    .play-container{
         flex-direction: column;
     }
     .navbar ul{
@@ -315,6 +360,22 @@ img{
         margin: 0;
         text-align: center;
     }
+    .play-content{
+        margin-bottom: 40px;
+    }
+    .content h2{
+        text-align: center;
+    }
+    .content p{
+        text-align: center;
+    }
+    .play-img{
+        max-width: 360px;
+    }
+    .play-image{
+        bottom: 130px;
+        right: 50px;
+    }
     
 }
 
@@ -323,7 +384,8 @@ img{
 
     .navbar-item,
     .navbar ul,
-    .gamer-container{
+    .gamer-container,
+    .play-container{
         flex-direction: column;
     }
     .banner .banner-container{
@@ -339,6 +401,22 @@ img{
     .funny-item{
         width: 49%;
         margin-bottom: 20px;
+    }
+    .play-img{
+        max-width: 440px;
+    }
+    .play-image{
+        bottom: 160px;
+        right: 80px;
+    }
+    .play-content{
+        margin-bottom: 40px;
+    }
+    .content h2{
+        text-align: center;
+    }
+    .content p{
+        text-align: center;
     }
 
 
